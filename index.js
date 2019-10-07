@@ -32,15 +32,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/no-require-imports': 'error',
-    '@typescript-eslint/no-unused-vars': [
-      'warn',
-      {
-        argsIgnorePattern: '^_',
-        vars: 'all',
-        args: 'after-used',
-        ignoreRestSiblings: true,
-      },
-    ],
+    '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     'eol-last': 'error',
     'no-console': 'warn',
