@@ -1,6 +1,6 @@
 {
   "name": "@musma/eslint-config",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "Musma's ESLint config with TypeScript support",
   "main": "index.js",
   "author": "Hyeonsoo Lee <hyeonsoo.david.lee@gmail.com>",
@@ -22,14 +22,18 @@
     "index.js"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.3",
-    "@typescript-eslint/parser": "^2.3",
+    "@typescript-eslint/eslint-plugin": "^2.4",
+    "@typescript-eslint/parser": "^2.4",
     "eslint": "^6.5",
     "eslint-config-prettier": "^6.4",
+    "eslint-plugin-import": "^2.18",
     "eslint-plugin-prettier": "^3.1",
     "eslint-plugin-react": "^7.16",
     "eslint-plugin-react-hooks": "^2.1",
-    "prettier": "^1.18.2"
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5",
+    "eslint-plugin-sort-keys-fix": "^1.0",
+    "eslint-plugin-unused-imports": "^0.1",
+    "prettier": "^1.18"
   },
   "devDependencies": {
     "typescript": "^3.6"
