@@ -70,9 +70,6 @@ module.exports = {
     'unused-imports/no-unused-vars-ts': ['warn', { argsIgnorePattern: '^_' }],
   },
   settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -81,8 +78,6 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    typescript: {
-      alwaysTryTypes: true,
-    },
+    typescript: {},
   },
 }
