@@ -43,7 +43,6 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     'eol-last': 'error',
-    'import/no-nodejs-modules': 'error',
     'import/no-unresolved': 'error',
     'no-console': 'warn',
     'no-unused-vars': 'off',

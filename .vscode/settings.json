@@ -12,15 +12,14 @@
   "[typescriptreact]": {
     "editor.formatOnSave": false
   },
-  "eslint.autoFixOnSave": true,
   "eslint.enable": true,
   "eslint.packageManager": "yarn",
   "eslint.nodePath": ".",
   "eslint.validate": [
-    { "language": "javascript", "autoFix": true },
-    { "language": "javascriptreact", "autoFix": true },
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ],
   "npm.packageManager": "yarn",
   "typescript.tsdk": "node_modules/typescript/lib",
@@ -30,5 +29,8 @@
   },
   "javascript.preferences.quoteStyle": "single",
   "typescript.validate.enable": false,
-  "javascript.validate.enable": false
+  "javascript.validate.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
