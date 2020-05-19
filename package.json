@@ -1,6 +1,6 @@
 {
   "name": "@musma/eslint-config",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Musma's ESLint config with TypeScript support",
   "main": "index.js",
   "author": "Hyeonsoo Lee <hyeonsoo.david.lee@gmail.com>",
@@ -24,7 +24,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
-    "eslint": "^7.0.0",
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.20.2",
