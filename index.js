@@ -8,14 +8,13 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'import', 'prettier', 'react', 'react-hooks', 'unused-imports'],
+  plugins: ['@typescript-eslint', 'import', 'prettier', 'unused-imports'],
   rules: {
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -48,12 +47,6 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
-    'react-hooks/exhaustive-deps': 'off',
-    'react-hooks/rules-of-hooks': 'warn',
-    'react/display-name': 'off',
-    'react/jsx-boolean-value': ['error', 'always'],
-    'react/jsx-pascal-case': 'off',
-    'react/prop-types': 'off',
     strict: ['error', 'global'],
     'unused-imports/no-unused-imports-ts': 'warn',
     'unused-imports/no-unused-vars-ts': ['warn', { argsIgnorePattern: '^_' }],
@@ -64,9 +57,6 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
       typescript: {},
-    },
-    react: {
-      version: 'detect',
     },
   },
 }
