@@ -54,8 +54,6 @@ module.exports = {
     'react/jsx-pascal-case': 'off',
     'react/prop-types': 'off',
     strict: ['error', 'global'],
-    'unused-imports/no-unused-imports-ts': 'warn',
-    'unused-imports/no-unused-vars-ts': ['warn', { argsIgnorePattern: '^_' }],
   },
   settings: {
     'import/resolver': {
