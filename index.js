@@ -47,6 +47,7 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
+    "react/react-in-jsx-scope": "off",
     'react-hooks/exhaustive-deps': 'off',
     'react-hooks/rules-of-hooks': 'warn',
     'react/display-name': 'off',
