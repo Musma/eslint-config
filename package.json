@@ -1,6 +1,6 @@
 {
   "name": "@musma/eslint-config",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "Musma's ESLint config with TypeScript support",
   "main": "index.js",
   "author": "YoungSu Kim (jklasd2001@musma.net)",
@@ -26,6 +26,7 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.11"
   }
 }
