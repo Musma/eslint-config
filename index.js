@@ -17,6 +17,7 @@ module.exports = {
   },
   rules: {
     "react/react-in-jsx-scope": "off", // import React from 'react' 제외
+    "import/default": "off",
     "import/order": [
       // Import Sort
       "error",
@@ -48,5 +49,6 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
+    'eol-last': 'error',    
   },
 }
