@@ -1,36 +1,16 @@
 {
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "eslint.enable": true,
-  "eslint.packageManager": "yarn",
-  "eslint.nodePath": ".",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "npm.packageManager": "yarn",
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "files.exclude": {
-    "**/dist": true,
-    "**/node_modules": true
-  },
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.validate.enable": false,
-  "javascript.validate.enable": false,
-  "editor.codeActionsOnSave": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": true
+    },
+    "explorerExclude.backup": null
 }

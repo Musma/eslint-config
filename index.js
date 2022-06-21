@@ -1,44 +1,45 @@
 module.exports = {
-  env: {
-    commonjs: true,
-    es6: true,
-    jest: true,
-    node: true,
-  },
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'plugin:prettier/recommended',
-  ],
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    sourceType: 'module',
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+  ],
+  plugins: [],
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
   },
-  plugins: ['@typescript-eslint', 'import', 'prettier', 'react', 'react-hooks', 'unused-imports'],
   rules: {
-    '@typescript-eslint/camelcase': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-member-accessibility': [
-      'error',
+    "react/react-in-jsx-scope": "off", // import React from 'react' 제외
+    "import/order": [
+      // Import Sort
+      "error",
       {
-        accessibility: 'explicit',
-        overrides: {
-          constructors: 'no-public',
+        "groups": ["builtin", "external", ["parent", "sibling"], "index"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
         },
-      },
+        "newlines-between": "always"
+      }
     ],
-    '@typescript-eslint/member-delimiter-style': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-inferrable-types': 'off',
-    '@typescript-eslint/no-require-imports': 'error',
-    '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/no-use-before-define': 'off',
-    'eol-last': 'error',
-    'import/no-unresolved': 'error',
-    'no-console': 'warn',
-    'no-unused-vars': 'off',
-    'prettier/prettier': [
-      'error',
+    "import/no-named-as-default-member": "off",
+    "import/no-named-as-default": "off",
+    "prettier/prettier": [
+      "error",
       {
         printWidth: 100,
         semi: false,
@@ -47,24 +48,5 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
-    "react/react-in-jsx-scope": "off",
-    'react-hooks/exhaustive-deps': 'off',
-    'react-hooks/rules-of-hooks': 'warn',
-    'react/display-name': 'off',
-    'react/jsx-boolean-value': ['error', 'always'],
-    'react/jsx-pascal-case': 'off',
-    'react/prop-types': 'off',
-    strict: ['error', 'global'],
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-      typescript: {},
-    },
-    react: {
-      version: 'detect',
-    },
   },
 }
