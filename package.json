@@ -1,9 +1,9 @@
 {
   "name": "@musma/eslint-config",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "description": "Musma's ESLint config with TypeScript support",
   "main": "index.js",
-  "author": "Hyeonsoo Lee <hyeonsoo.david.lee@gmail.com>",
+  "author": "YoungSu Kim (jklasd2001@musma.net)",
   "license": "MIT",
   "repository": {
     "type": "git",
