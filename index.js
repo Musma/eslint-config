@@ -14,7 +14,11 @@ module.exports = {
     'import/resolver': {
       typescript: {},
     },
+    react: {
+      version: 'detect',
+    },
   },
+
   rules: {
     "react/react-in-jsx-scope": "off", // import React from 'react' 제외
     "import/default": "off",
@@ -22,7 +26,7 @@ module.exports = {
       // Import Sort
       "error",
       {
-        "groups": ["builtin", "external", ["index", "parent", "sibling"]],
+        "groups": ["builtin", "external", [ "parent", "sibling", "index"]],
         "pathGroups": [
           {
             "pattern": "react",
