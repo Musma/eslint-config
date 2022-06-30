@@ -50,6 +50,16 @@ vi .eslintrc
 }
 ```
 
+## Lint, Prettier가 작동하지 않을 경우
+
+1. VS Code 에서 `Command + ,` 를 클릭하여 설정 페이지를 연다
+
+![스크린샷 2022-06-30 오후 2 00 12](https://user-images.githubusercontent.com/28969912/176596876-05978501-22cc-4f9a-ba94-27a9c49358c4.png)
+
+2. `사용자` 탭에서 화면 상단의 `JSON 열기` 버튼을 클릭한다.
+
+3. 개인이 사용하는 VS Code Theme 관련 코드를 제외하고 모두 없앤다.
+
 ## License
 
 Open source [licensed as MIT](./LICENSE).
