@@ -1,6 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  "extends": [
+  extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
@@ -14,14 +14,13 @@ module.exports = {
     'import/resolver': {
       typescript: {},
       node: {
-        "extensions": [".ts", ".tsx", ".js", ".jsx"]
+        extensions: [".ts", ".tsx", ".js", ".jsx"]
       }
     },
     react: {
       version: 'detect',
     },
   },
-
   rules: {
     "react/react-in-jsx-scope": "off", // import React from 'react' 제외
     "import/default": "off",
