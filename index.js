@@ -28,7 +28,7 @@ module.exports = {
       // Import Sort
       "error",
       {
-        "groups": ["builtin", "external", [ "parent", "sibling", "index"]],
+        "groups": ["builtin", "external", ["parent", "sibling", "index"]],
         "pathGroups": [
           {
             "pattern": "react",
