@@ -18,7 +18,15 @@ module.exports = {
   },
   rules: {
     "import/default": "off",
-    "@typescript-eslint/explicit-member-accessibility": "error",
+    "@typescript-eslint/explicit-member-accessibility": [
+      "error",
+      {
+        accessibility: "explicit",
+        overrides: {
+          constructors: "no-public",
+        },
+      },
+    ],
     "import/order": [
       // Import Sort
       "error",

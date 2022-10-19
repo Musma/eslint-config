@@ -1,6 +1,6 @@
 {
   "name": "@musma/eslint-config",
-  "version": "0.0.42",
+  "version": "0.0.43",
   "description": "Musma's ESLint config with TypeScript support",
   "main": "index.js",
   "author": "YoungSu Kim (jklasd2001@musma.net)",
